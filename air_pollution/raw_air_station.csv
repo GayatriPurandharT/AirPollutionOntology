@@ -1,0 +1,3 @@
+﻿stationID,stationType,nameTH,nameEN,areaTH,areaEN,province,lat,long
+08t,GROUND,ศูนย์ฟื้นฟูอาชีพคนพิการและทุพลภาพ พระประแดง,Prabadang Rehabiltation Center,"ต.ทรงคนอง อ.พระประแดง, สมุทรปราการ","Song Kanong, Phra Pradaeng, Samut Prakan",Samut Prakan,13.664023,100.543406
+20t,GROUND,มหาวิทยาลัยกรุงเทพ วิทยาเขตรังสิต,Bangkok University Rangsit Campus,"ต.คลองหนึ่ง,อ.คลองหลวง, ปทุมธานี","Khlong Nueng, Khlong Luang, Pathum Thani",Pathum Thani,14.037512,100.605124

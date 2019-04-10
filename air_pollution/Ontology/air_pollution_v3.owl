@@ -1,0 +1,552 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#"
+     xml:base="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_location -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_location">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#FeatureOfInterest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_province -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_province">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#FeatureOfInterest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Province"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_sensor_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_sensor_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#SensorType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#made_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#made_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Measurement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_area_en -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_area_en">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#FeatureOfInterest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_area_th -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_area_th">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#FeatureOfInterest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_co_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_co_value">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_datetime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_datetime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_feature_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_feature_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#FeatureOfInterest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_feature_lat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_feature_lat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#FeatureOfInterest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_feature_long -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_feature_long">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#FeatureOfInterest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_feature_name_en -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_feature_name_en">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#FeatureOfInterest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_feature_name_th -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_feature_name_th">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#FeatureOfInterest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_measure_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_measure_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_pm10_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_pm10_value">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_pm25_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_pm25_value">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_province -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_province">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#FeatureOfInterest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_province_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_province_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Province"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_province_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_province_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Province"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_sensor_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_sensor_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_sensor_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_sensor_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_sensortype_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_sensortype_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#SensorType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_sensortype_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#has_sensortype_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#SensorType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Agent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#AirQuality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#AirQuality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Static"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#AreaSource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#AreaSource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#SourcePollution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Asia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Asia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Bangkok -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Bangkok">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#CentralRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#CO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#CO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#AirQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#CauseActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#CauseActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#CentralRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#CentralRegion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Province"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Chiang_mai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Chiang_mai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#NorthRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Chiang_rai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Chiang_rai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#NorthRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#FeatureOfInterest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#FeatureOfInterest"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Humidity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Humidity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Static"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Laos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Laos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Asia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Measurement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Measurement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Mobile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Mobile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#SensorType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Myanmar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Myanmar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Asia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#NorthRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#NorthRegion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Province"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Observation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Observation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#PM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#PM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#AirQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#PM10 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#PM10">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#PM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#PM25 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#PM25">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#PM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Pathum_thani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Pathum_thani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#CentralRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#PointSource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#PointSource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#SourcePollution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Province -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Province">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Result -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Result"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#SO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#SO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#AirQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Samut_prakan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Samut_prakan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#CentralRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#SensorType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#SensorType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#SolutionActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#SolutionActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#SourcePollution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#SourcePollution"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Static -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Static">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#SensorType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Static"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Thailand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Thailand">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Asia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Wind -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Wind">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pattama/ontologies/2019/3/air_pollution#Static"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
